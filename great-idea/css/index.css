@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-.container { margin: 2rem 8rem 6rem; }
+.container { margin: 2rem 8rem; }
 
 header {
   top: 0;
@@ -75,11 +75,11 @@ header {
 header nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
-  background: #f1f5f8;
-  padding: 2rem;
+  background: white;
+  padding: 1rem 0;
 }
 
 header nav a:nth-of-type(-n+6) {
@@ -88,7 +88,7 @@ header nav a:nth-of-type(-n+6) {
   text-decoration: none;
 }
 
-section { margin: 4rem 0; }
+section { margin: 2rem 0 2rem 0; }
 
 section.landing .cols {
   display: flex;
@@ -105,12 +105,18 @@ section.landing .cols .col {
 
 section.landing .title { font-size: 6rem; }
 
-section.landing .cta {
+section.landing .cta,
+button.styled {
   cursor: pointer;
   background: white;
   font-size: 1.15rem;
   border: solid 2px black;
   padding: 0.5rem 3rem;
+}
+
+button.styled {
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
 section .row {
@@ -132,7 +138,54 @@ section .component .heading { font-size: 1.5rem; }
 section .component .body { line-height: 1.25; }
 
 footer {
+  min-height: 2rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* services.html-specific styles below */
+section .subtitle { font-size: 2rem; }
+
+p.body,
+.list ul {
+  font-size: 1.10rem;
+  line-height: 1.5;
+}
+
+.list ul {
+  list-style-type: square;
+}
+
+.list ul li {
+  margin: 1rem 0 0 1rem;
+}
+
+section .row h3.title { font-size: 1.35rem; }
+
+section .row .img-wrapper,
+.img-wrapper img {
+  min-width: 100%;
+}
+
+section .row .feature {
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1rem;
+  border: solid 2px black;
+  background: #f1f5f8;
+}
+
+section .row .feature:nth-child(1) { margin-right: 2rem; }
+
+section.extras .row * {
+  flex: 1;
+}
+
+section.extras .row *:nth-child(1) {
+  margin-right: 2rem;
 }
