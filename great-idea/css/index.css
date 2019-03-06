@@ -64,3 +64,95 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+  margin: 2rem 8rem 6rem;
+}
+
+header {
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+header nav {
+  text-align: center;
+  line-height: 40px;
+  background: #f1f5f8;
+  padding: 2rem;
+}
+
+header nav a:nth-of-type(-n+6) {
+  display: inline-block;
+  font-size: 1.15rem;
+  color: black;
+  text-decoration: none;
+  margin-right: 8%;
+  vertical-align: top;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+section.landing .cols {
+  width: 100%;
+  text-align: center;
+}
+
+section.landing .cols .col {
+  display: inline-block;
+  width: 48%;
+}
+
+section.landing .title {
+  font-size: 6rem;
+  text-align: center;
+}
+
+section.landing .cta {
+  cursor: pointer;
+  background: white;
+  font-size: 1.15rem;
+  border: solid 2px black;
+  padding: 0.5rem 3rem;
+}
+
+section .component.half {
+  display: inline-block;
+  width: 45%;
+}
+
+section .component.half:nth-child(1) {
+  margin-right: 5%;
+}
+
+section .component.third {
+  display: inline-block;
+  width: 30%;
+}
+
+section .component.third:nth-child(n) {
+  margin-right: 1%;
+}
+
+section .component .heading {
+  font-size: 1.5rem;
+}
+
+section .component .body {
+  line-height: 1.25;
+}
+
+div.banner {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+div.banner .middle-img {
+  min-width: 100%;
+}
+
+footer {
+  text-align: center;
+  font-family: 'B612', 'Titillium Web', sans-serif;
+}
